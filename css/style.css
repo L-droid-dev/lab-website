@@ -482,6 +482,17 @@ img { max-width: 100%; display: block; }
 
 .project-links { display: flex; gap: 18px; font-size: 14px; font-weight: 600; }
 
+/* ---------- 大板块卡片（项目页四个方向） ---------- */
+.cat-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+}
+
+.cat-card p { color: var(--text-light); font-size: 15px; margin-bottom: 16px; }
+
 /* ---------- 成果统计 ---------- */
 .stats-row {
   display: flex;
