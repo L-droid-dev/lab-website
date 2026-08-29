@@ -25,6 +25,7 @@
 4. GitHub 用户名已设为 L-droid-dev（如更换账号，全局搜索 `L-droid-dev` 替换即可）
 5. 想换 logo：直接替换 `assets/img/` 里的同名图片即可（保持文件名不变）
 6. 不需要「合作伙伴」板块：删除 `index.html` 中 `id="team"` 之后、页脚之前的整段 `<!-- ===== 合作伙伴 ===== -->` 区块
+7. 获奖证书照片放 `assets/img/certificates/`，实验室风采照片放 `assets/img/gallery/`，然后在对应页面的图墙里引用
 
 ## 三、部署到 GitHub Pages（免费，公网可访问）
 
