@@ -5,8 +5,8 @@
    ========================================================= */
 
 :root {
-  --accent: #00b3ff;            /* 主色调（RoboMaster 科技青） */
-  --accent-dark: #0088cc;       /* 主色调（深色，用于悬停） */
+  --accent: #4da3e0;            /* 主色调（柔和雾蓝） */
+  --accent-dark: #3a86b8;       /* 主色调（深色，用于悬停） */
   --text: #e8eef7;              /* 正文颜色（近白） */
   --text-light: #8ea3c0;        /* 次要文字（浅蓝灰） */
   --bg: #0a1120;                /* 页面背景（深海军蓝） */
@@ -15,7 +15,7 @@
   --border: #1e2f4f;            /* 边框 */
   --radius: 12px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 8px 30px rgba(0, 179, 255, 0.12);
+  --shadow-hover: 0 8px 30px rgba(77, 163, 224, 0.10);
 }
 
 /* ---------- 基础重置 ---------- */
@@ -33,7 +33,7 @@ body {
 }
 
 a { color: var(--accent); text-decoration: none; }
-a:hover { color: #4fc3ff; }
+a:hover { color: #86c6f2; }
 
 img { max-width: 100%; display: block; }
 
@@ -131,7 +131,7 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 18px rgba(0, 179, 255, 0.35); }
+.btn-primary:hover { background: var(--accent-dark); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 18px rgba(77, 163, 224, 0.25); }
 
 .btn-ghost {
   background: transparent;
@@ -155,8 +155,8 @@ img { max-width: 100%; display: block; }
   text-align: center;
   padding: 90px 20px 100px;
   background:
-    radial-gradient(1000px 400px at 80% -10%, rgba(0, 179, 255, 0.16), transparent 60%),
-    radial-gradient(800px 400px at 10% 110%, rgba(0, 179, 255, 0.10), transparent 60%);
+    radial-gradient(1000px 400px at 80% -10%, rgba(77, 163, 224, 0.08), transparent 60%),
+    radial-gradient(800px 400px at 10% 110%, rgba(77, 163, 224, 0.05), transparent 60%);
 }
 
 .hero-logo {
@@ -221,7 +221,7 @@ img { max-width: 100%; display: block; }
   width: 48px;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, var(--accent), #00e5ff);
+  background: linear-gradient(90deg, var(--accent), #7cc3f0);
   margin: 12px auto 0;
 }
 
@@ -430,7 +430,7 @@ img { max-width: 100%; display: block; }
   padding: 60px 20px;
   text-align: center;
   background:
-    radial-gradient(800px 300px at 50% -20%, rgba(0, 179, 255, 0.14), transparent 60%);
+    radial-gradient(800px 300px at 50% -20%, rgba(77, 163, 224, 0.07), transparent 60%);
   border-bottom: 1px solid var(--border);
 }
 
@@ -472,8 +472,8 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   padding: 3px 10px;
   border-radius: 999px;
-  background: rgba(0, 179, 255, 0.15);
-  color: #4fc3ff;
+  background: rgba(77, 163, 224, 0.15);
+  color: #86c6f2;
 }
 
 .badge-green { background: rgba(74, 222, 128, 0.15); color: #4ade80; }
@@ -575,7 +575,7 @@ img { max-width: 100%; display: block; }
   align-items: flex-start;
   max-width: 760px;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(0, 179, 255, 0.10), rgba(0, 179, 255, 0.03));
+  background: linear-gradient(135deg, rgba(77, 163, 224, 0.06), rgba(77, 163, 224, 0.02));
   border: 1.5px solid var(--accent);
   border-radius: var(--radius);
   padding: 28px 30px;
@@ -828,7 +828,7 @@ img { max-width: 100%; display: block; }
 
 .footer-col p { color: #8ea3c0; line-height: 1.8; margin-bottom: 8px; }
 .footer-col a { color: #8ea3c0; transition: color 0.2s; }
-.footer-col a:hover { color: #4fc3ff; }
+.footer-col a:hover { color: #86c6f2; }
 
 .footer-col .f-links { display: flex; flex-direction: column; gap: 8px; }
 
