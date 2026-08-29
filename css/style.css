@@ -327,11 +327,22 @@ img { max-width: 100%; display: block; }
 }
 
 .team-logo {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 2px solid var(--border);
+  width: 240px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #fff;
+  padding: 6px;
+}
+
+.about-banner {
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto 32px;
+  border-radius: var(--radius);
   box-shadow: var(--shadow);
   background: #fff;
 }
@@ -550,5 +561,5 @@ img { max-width: 100%; display: block; }
   .feature-award { flex-direction: column; align-items: center; text-align: center; padding: 22px 20px; }
   .feature-award-links { justify-content: center; }
   .hero-logo { width: 96px; height: 96px; }
-  .team-logo { width: 80px; height: 80px; }
+  .team-logo { width: 180px; height: 90px; }
 }
