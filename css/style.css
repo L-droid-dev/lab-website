@@ -584,6 +584,17 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+.partner-logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+}
+
+.partner-row { gap: 20px; flex-wrap: wrap; }
+
 .partner-info h3 { font-size: 16px; margin-bottom: 2px; }
 .partner-info p { color: var(--text-light); font-size: 13.5px; }
 
