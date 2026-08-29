@@ -268,7 +268,7 @@ img { max-width: 100%; display: block; }
   align-items: start;
 }
 
-.about-text p { margin-bottom: 16px; color: #334155; }
+.about-text p { margin-bottom: 16px; color: #334155; text-indent: 2em; }
 
 .about-facts { display: flex; flex-direction: column; gap: 16px; }
 
