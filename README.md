@@ -99,7 +99,7 @@ git push
 5. 成员会收到 GitHub 邀请邮件，点 **Accept invitation** 即完成
 
 > ⚠️ 邀请 **7 天内**有效，过期要重新邀请；4 个代码仓库（control/vision/hardware/mechanical）都要分别添加。
-> 💡 改已有成员的权限：Settings → Collaborators → 点成员名字右侧的权限下拉框（Write/Read）→ 直接选 **Admin** 即可，立即生效，无需重新邀请。
+> 💡 注意：**个人仓库添加成员后不能直接修改权限**。要改成 Admin，需先 **Remove**（移除）该成员，再 **Add people** 重新添加并选择 **Admin**。想随时灵活改权限，建议使用 **GitHub Organization（组织）**。
 
 **人多 / 长期维护（推荐进阶）：**
 创建 **GitHub Organization（组织）**，把 4 个仓库放进组织，成员加入组织并按组分配权限（控制组/视觉组/硬件组/机械组），换人、离职管理更规范，仓库归属也更统一。
