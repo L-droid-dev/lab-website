@@ -714,18 +714,18 @@ img { max-width: 100%; display: block; }
   height: 56px;
   margin: 0 auto 14px;
   border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  color: #fff;
+  overflow: hidden;
+  padding: 6px;
 }
 
-.media-douyin { background: #161823; }
-.media-bilibili { background: #fb7299; }
-.media-xhs { background: #ff2442; }
+.media-douyin, .media-bilibili, .media-xhs { background: #fff; }
 
-.media-icon svg { width: 55%; height: 55%; }
+.media-icon img { width: 100%; height: 100%; object-fit: contain; }
 
 .media-card h3 { font-size: 17px; margin-bottom: 6px; color: var(--text); }
 .media-card p { color: var(--text-light); font-size: 13.5px; margin-bottom: 14px; }
@@ -755,20 +755,18 @@ img { max-width: 100%; display: block; }
   width: 38px;
   height: 38px;
   border-radius: 50%;
+  background: #fff;
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
-  color: #fff;
-  background: #94a3b8;
+  overflow: hidden;
+  padding: 5px;
   transition: transform 0.2s;
 }
 
 .social-icons a:hover { transform: translateY(-2px); }
-.social-icons .s-douyin { background: #161823; }
-.social-icons .s-bilibili { background: #fb7299; }
-.social-icons .s-xhs { background: #ff2442; }
-.social-icons svg { width: 55%; height: 55%; }
+.social-icons img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ---------- 页脚 ---------- */
 .footer {
