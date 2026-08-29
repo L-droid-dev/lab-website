@@ -654,6 +654,16 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
+/* 证书完整显示（不被裁切），点击可查看原图 */
+.cert-item a { display: block; line-height: 0; }
+
+.cert-item img.cert-full {
+  height: 300px;
+  object-fit: contain;
+  background: #fff;
+  cursor: zoom-in;
+}
+
 .cert-item figcaption {
   padding: 10px 12px;
   font-size: 13px;
