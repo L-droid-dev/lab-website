@@ -880,25 +880,12 @@ img { max-width: 100%; display: block; }
 
 .dir-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 
-.dir-img-frame {
-  width: 92px;
-  height: 92px;
-  margin: 0 0 14px;
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
 .dir-img {
-  max-width: 80%;
-  max-height: 80%;
-  width: auto;
-  height: auto;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
+  margin: 0 0 14px;
+  display: block;
 }
 
 .dir-card h3 { font-size: 18px; margin-bottom: 10px; }
