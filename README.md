@@ -120,47 +120,25 @@ git push
 - **GitHub 组织**：如果实验室有自己的 GitHub 组织账号，把仓库放到组织下，网址变成 `组织名.github.io/仓库名`
 - **SSL**：Pages 默认免费开启 HTTPS
 
-## 六、Gitee（码云）国内镜像部署（独立副本，不影响 GitHub）
+## 六、国内访问加速说明（Gitee Pages 已停服）
 
-> 单独在国内部署一份网站副本，GitHub 那边完全不用动。Gitee Pages 是国内服务器，访问最稳；图片走 jsDelivr CDN，镜像站同样能正常显示。⚠️ 免费版 Gitee Pages 需要**实名认证**，每次更新要**手动点「更新」**。
+> ⚠️ **Gitee Pages 服务已停止新用户开通（平台政策，2022 年起）**，无法再用它托管网页。Gitee 仓库仍可用来**备份代码**（`git push gitee main:master`），但网页展示请用下面方案。
 
-### 1. 准备
+### 当前网站的国内加速措施（已生效）
 
-- 注册并登录 Gitee（gitee.com），完成**实名认证**
-- 新建仓库 `lab-website`，选 **Public**，**不要**勾选任何初始化选项
+1. **图片全部走 jsDelivr CDN**（有国内节点），7.7MB 图片在国内加载快；
+2. 网页本体（HTML/CSS/JS）只有几十 KB，从 GitHub Pages 加载本身不算慢；
+3. 建议先实测：用手机流量打开 `https://L-droid-dev.github.io/lab-website/`，速度可接受就不用额外折腾。
 
-### 2. 推送代码（本地已加好 gitee 远程，只需改用户名）
+### 如果网页本体也想放国内（替代方案）
 
-把 `linyang-forest` 换成你的 Gitee 用户名：
+| 方案 | 特点 |
+| --- | --- |
+| **腾讯云 COS / 阿里云 OSS 静态网站托管** | 国内快，需实名，按量付费（小流量每月几元内） |
+| **Cloudflare Pages** | 免费，但国内访问速度一般 |
+| **自有服务器** | 最可控，需要运维 |
 
-```bash
-git remote set-url gitee https://gitee.com/linyang-forest/lab-website.git
-git push gitee main:master
-```
-
-> `main:master` = 把本地 `main` 分支推送到 Gitee 的 `master` 分支（Gitee Pages 默认用 master 分支）。
-
-### 3. 开启 Gitee Pages
-
-1. Gitee 仓库 → **服务** → **Gitee Pages**
-2. 部署分支选 **master**，部署目录 `/ (root)`
-3. 首次需**实名认证**（上传身份信息，一般 1-2 天审核）
-4. 通过后点**启动服务**，网址：`https://linyang-forest.gitee.io/lab-website/`
-
-### 4. 日常更新（两站互不影响，各自推送）
-
-```bash
-git push origin main          # GitHub（自动部署，1 分钟后生效）
-git push gitee main:master    # Gitee 镜像
-```
-
-Gitee 推送后还要**回到 Gitee Pages 页面点「更新」按钮**才会重新部署。
-
-### 5. Gitee 常见问题
-
-- **推送提示认证失败**：Gitee 第一次推送会要求账号密码或私人令牌，按提示登录即可
-- **更新后没变化**：确认点过 Pages 页面的「更新」按钮
-- **404**：检查网址是否带 `/lab-website/`，以及 Pages 是否已启动
+> 做法：把 `lab-website` 文件夹整体上传到上述任一平台，开启静态网站托管即可；图片仍走 jsDelivr 不用改。
 
 ## 七、常见问题
 
