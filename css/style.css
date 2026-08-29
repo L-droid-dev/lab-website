@@ -228,6 +228,38 @@ img { max-width: 100%; display: block; }
   margin-top: 20px;
 }
 
+/* ---------- 成员分组名单 ---------- */
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.group-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.group-card h4 { font-size: 15.5px; margin-bottom: 14px; }
+
+.name-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.name-tag {
+  font-size: 13px;
+  padding: 4px 13px;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-light);
+}
+
+.name-tags-center { justify-content: center; max-width: 820px; margin: 0 auto; }
+
 /* ---------- 实验室简介 ---------- */
 .about-grid {
   display: grid;
@@ -574,6 +606,7 @@ img { max-width: 100%; display: block; }
   .quick-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .groups-grid { grid-template-columns: 1fr; }
 
   /* 手机端菜单 */
   .nav-toggle { display: flex; }
