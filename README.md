@@ -131,10 +131,10 @@ git push
 
 ### 2. 推送代码（本地已加好 gitee 远程，只需改用户名）
 
-把 `你的码云用户名` 换成你的 Gitee 用户名：
+把 `linyang-forest` 换成你的 Gitee 用户名：
 
 ```bash
-git remote set-url gitee https://gitee.com/你的码云用户名/lab-website.git
+git remote set-url gitee https://gitee.com/linyang-forest/lab-website.git
 git push gitee main:master
 ```
 
@@ -145,7 +145,7 @@ git push gitee main:master
 1. Gitee 仓库 → **服务** → **Gitee Pages**
 2. 部署分支选 **master**，部署目录 `/ (root)`
 3. 首次需**实名认证**（上传身份信息，一般 1-2 天审核）
-4. 通过后点**启动服务**，网址：`https://你的码云用户名.gitee.io/lab-website/`
+4. 通过后点**启动服务**，网址：`https://linyang-forest.gitee.io/lab-website/`
 
 ### 4. 日常更新（两站互不影响，各自推送）
 
