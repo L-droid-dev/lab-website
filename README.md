@@ -9,7 +9,7 @@
 | `awards.html` | 获奖荣誉：代表成果 + 参赛足迹（2026 赛季）+ 历年获奖 |
 | `css/style.css` | 全部样式（改顶部 `--accent` 变量即可换主题色） |
 | `js/main.js` | 手机端菜单等交互 |
-| `assets/img/` | 实验室 logo（2 个）、战队 logo（2 个）、合作伙伴 logo（创芯工坊） |
+| `assets/img/` | 实验室 logo（3 个）、战队 logo（2 个）、赞助单位 logo（创芯工坊、铨洲科技） |
 
 ## 一、在本地预览
 
