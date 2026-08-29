@@ -775,8 +775,8 @@ img { max-width: 100%; display: block; }
 
 .social-icons a:hover { transform: translateY(-2px); }
 .social-icons .s-douyin { background: #161823; }
-.social-icons .s-bilibili { background: #fb7299; }
-.social-icons .s-xhs { background: #ff2442; }
+.social-icons .s-bilibili { background: #fff; border: 1px solid var(--border); }
+.social-icons .s-xhs { background: #fff; border: 1px solid var(--border); }
 .social-icons img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ---------- 页脚（整合版） ---------- */
