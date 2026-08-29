@@ -83,12 +83,25 @@ git push
 
 （四宫格卡片已指向这些地址，仓库建好即生效。）
 
-### 2. 给成员开权限
+### 2. 给成员开权限（管理员操作）
 
-每个成员的电脑上都要有 GitHub 账号（注册：github.com/signup），然后把用户名发给管理员：
+每个成员的电脑上都要有 GitHub 账号（注册：github.com/signup），然后把成员的**用户名**发给你。
 
-- **人少（<10 人）**：管理员在仓库 Settings → Collaborators → Add people，输入成员用户名即可；
-- **人多 / 长期维护**：建议创建 GitHub Organization（组织），把仓库放进组织，成员加入组织并按组分配权限（控制组/视觉组/硬件组/机械组），后续换人、离职管理更规范。
+**添加 Collaborators（人少时推荐）：**
+
+1. 打开私有仓库，例如 `https://github.com/L-droid-dev/control`
+2. 点 **Settings** → 左侧 **Collaborators**
+3. 点 **Add people**，输入成员的 GitHub 用户名
+4. 选权限级别，点 **Add 用户名 to this repository**：
+   - **Read**：只能查看（不能改）
+   - **Write**：可查看 + 上传/修改代码（给队员用这个）
+   - **Admin**：可管理仓库（只给核心负责人）
+5. 成员会收到 GitHub 邀请邮件，点 **Accept invitation** 即完成
+
+> ⚠️ 邀请 **7 天内**有效，过期要重新邀请；4 个代码仓库（control/vision/hardware/mechanical）都要分别添加。
+
+**人多 / 长期维护（推荐进阶）：**
+创建 **GitHub Organization（组织）**，把 4 个仓库放进组织，成员加入组织并按组分配权限（控制组/视觉组/硬件组/机械组），换人、离职管理更规范，仓库归属也更统一。
 
 ### 3. 成员上传 / 更新代码（以 control 为例）
 
