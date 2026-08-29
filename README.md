@@ -68,3 +68,23 @@ git push
 - **自定义域名**：Settings → Pages → Custom domain，绑定你买的域名
 - **GitHub 组织**：如果实验室有自己的 GitHub 组织账号，把仓库放到组织下，网址变成 `组织名.github.io/仓库名`
 - **SSL**：Pages 默认免费开启 HTTPS
+
+## 五、常见问题
+
+**Q1：部署后页面样式/图片全乱了？**
+> 检查地址栏网址是否以 `/lab-website/` 结尾（如果仓库名不是 `lab-website`，就是你的仓库名）。本网站全部使用相对路径，只要文件结构和仓库一致就不会出错；不要用 `file://` 打开部署后的链接。
+
+**Q2：编辑保存后中文变成乱码？**
+> 所有文件都是 UTF-8 编码。用 VS Code / Notepad++ 编辑时，右下角确认编码是 **UTF-8**（不要选 GBK 或 ANSI）。Windows 老版记事本建议用 VS Code 代替。
+
+**Q3：GitHub 访问慢或打不开？**
+> GitHub 国内访问偶尔不稳定。可选的替代方案：
+> - 换用 **Gitee（码云）** 的 Pages 服务（国内快，但需实名认证），流程类似；
+> - 用 Cloudflare Pages（免费，海外节点快）；
+> - 给 GitHub Pages 配置国内 CDN 或自定义域名。
+
+**Q4：推送时提示 "failed to push some refs"？**
+> 说明 GitHub 上的仓库已有其他内容（比如勾选了自动生成 README）。解决：先 `git pull origin main --allow-unrelated-histories`，再重新 `git push -u origin main`。
+
+**Q5：改完推送后网页没更新？**
+> GitHub Pages 部署需要 1~2 分钟，稍等后强制刷新（Ctrl+F5 / 手机端清缓存）即可。
