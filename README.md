@@ -120,7 +120,49 @@ git push
 - **GitHub 组织**：如果实验室有自己的 GitHub 组织账号，把仓库放到组织下，网址变成 `组织名.github.io/仓库名`
 - **SSL**：Pages 默认免费开启 HTTPS
 
-## 六、常见问题
+## 六、Gitee（码云）国内镜像部署（独立副本，不影响 GitHub）
+
+> 单独在国内部署一份网站副本，GitHub 那边完全不用动。Gitee Pages 是国内服务器，访问最稳；图片走 jsDelivr CDN，镜像站同样能正常显示。⚠️ 免费版 Gitee Pages 需要**实名认证**，每次更新要**手动点「更新」**。
+
+### 1. 准备
+
+- 注册并登录 Gitee（gitee.com），完成**实名认证**
+- 新建仓库 `lab-website`，选 **Public**，**不要**勾选任何初始化选项
+
+### 2. 推送代码（本地已加好 gitee 远程，只需改用户名）
+
+把 `你的码云用户名` 换成你的 Gitee 用户名：
+
+```bash
+git remote set-url gitee https://gitee.com/你的码云用户名/lab-website.git
+git push gitee main:master
+```
+
+> `main:master` = 把本地 `main` 分支推送到 Gitee 的 `master` 分支（Gitee Pages 默认用 master 分支）。
+
+### 3. 开启 Gitee Pages
+
+1. Gitee 仓库 → **服务** → **Gitee Pages**
+2. 部署分支选 **master**，部署目录 `/ (root)`
+3. 首次需**实名认证**（上传身份信息，一般 1-2 天审核）
+4. 通过后点**启动服务**，网址：`https://你的码云用户名.gitee.io/lab-website/`
+
+### 4. 日常更新（两站互不影响，各自推送）
+
+```bash
+git push origin main          # GitHub（自动部署，1 分钟后生效）
+git push gitee main:master    # Gitee 镜像
+```
+
+Gitee 推送后还要**回到 Gitee Pages 页面点「更新」按钮**才会重新部署。
+
+### 5. Gitee 常见问题
+
+- **推送提示认证失败**：Gitee 第一次推送会要求账号密码或私人令牌，按提示登录即可
+- **更新后没变化**：确认点过 Pages 页面的「更新」按钮
+- **404**：检查网址是否带 `/lab-website/`，以及 Pages 是否已启动
+
+## 七、常见问题
 
 **Q1：部署后页面样式/图片全乱了？**
 > 检查地址栏网址是否以 `/lab-website/` 结尾（如果仓库名不是 `lab-website`，就是你的仓库名）。本网站全部使用相对路径，只要文件结构和仓库一致就不会出错；不要用 `file://` 打开部署后的链接。
