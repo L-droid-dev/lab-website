@@ -60,10 +60,21 @@ img { max-width: 100%; display: block; }
 }
 
 .brand {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
   white-space: nowrap;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -144,6 +155,16 @@ img { max-width: 100%; display: block; }
   background:
     radial-gradient(1000px 400px at 80% -10%, rgba(37, 99, 235, 0.10), transparent 60%),
     radial-gradient(800px 400px at 10% 110%, rgba(37, 99, 235, 0.08), transparent 60%);
+}
+
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+  border: 3px solid #fff;
 }
 
 .hero-eyebrow {
@@ -295,6 +316,45 @@ img { max-width: 100%; display: block; }
 .member-dir { font-size: 13.5px; color: var(--text-light); margin-bottom: 6px; }
 .member-mail { font-size: 13px; }
 
+/* ---------- 战队板块 ---------- */
+.team-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.team-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+
+.team-desc {
+  text-align: center;
+  color: var(--text-light);
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+.team-subtitle {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 24px;
+}
+
+.team-grid + .btn,
+.team-desc + .btn { display: block; }
+
+.team-section-center { text-align: center; }
+
 /* ---------- 内页标题区 ---------- */
 .page-header {
   padding: 60px 20px;
@@ -383,7 +443,36 @@ img { max-width: 100%; display: block; }
 
 .stat span { color: var(--text-light); font-size: 14px; }
 
-/* ---------- 论文列表 ---------- */
+/* ---------- 代表成果 ---------- */
+.feature-award {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  max-width: 760px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(37, 99, 235, 0.02));
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+}
+
+.feature-award-icon { font-size: 44px; line-height: 1; }
+
+.feature-award h3 { font-size: 18px; margin-bottom: 6px; }
+
+.feature-award-meta {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-award-desc { color: var(--text-light); font-size: 14.5px; margin-bottom: 12px; }
+
+.feature-award-links { display: flex; gap: 18px; font-size: 14px; font-weight: 600; }
+
+/* ---------- 获奖列表 ---------- */
 .year {
   font-size: 20px;
   font-weight: 700;
@@ -394,9 +483,9 @@ img { max-width: 100%; display: block; }
 
 .year:first-child { margin-top: 0; }
 
-.pub-list { list-style: none; }
+.award-list { list-style: none; }
 
-.pub-item {
+.award-item {
   padding: 18px 20px;
   margin-bottom: 14px;
   border: 1px solid var(--border);
@@ -405,13 +494,13 @@ img { max-width: 100%; display: block; }
   transition: box-shadow 0.2s;
 }
 
-.pub-item:hover { box-shadow: var(--shadow); }
+.award-item:hover { box-shadow: var(--shadow); }
 
-.pub-authors { font-size: 14px; color: var(--text-light); margin-bottom: 4px; }
-.pub-title { font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
-.pub-venue { font-size: 14px; color: var(--accent); margin-bottom: 8px; }
+.award-name { font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
+.award-team { font-size: 14px; color: var(--text-light); margin-bottom: 4px; }
+.award-venue { font-size: 14px; color: var(--accent); margin-bottom: 8px; }
 
-.pub-links { display: flex; gap: 18px; font-size: 13.5px; font-weight: 600; }
+.award-links { display: flex; gap: 18px; font-size: 13.5px; font-weight: 600; }
 
 /* ---------- 页脚 ---------- */
 .footer {
@@ -458,4 +547,8 @@ img { max-width: 100%; display: block; }
   .section { padding: 50px 0; }
   .hero { padding: 60px 20px 70px; }
   .stats-row { gap: 30px; }
+  .feature-award { flex-direction: column; align-items: center; text-align: center; padding: 22px 20px; }
+  .feature-award-links { justify-content: center; }
+  .hero-logo { width: 96px; height: 96px; }
+  .team-logo { width: 80px; height: 80px; }
 }

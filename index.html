@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="【实验室名称】官方网站 - 实验室简介、研究方向、代码项目与论文成果">
+  <meta name="description" content="机器人科创实验室官方网站 - 实验室简介、云枢Thrive战队、RoboMaster参赛记录、代码项目与历年获奖">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="【实验室名称】 - 官方网站">
-  <meta property="og:description" content="【实验室名称】：实验室简介、研究方向、代码项目与论文成果。">
-  <meta property="og:image" content="https://你的GitHub用户名.github.io/lab-website/assets/favicon.svg">
-  <title>【实验室名称】 - 首页</title>
+  <meta property="og:title" content="机器人科创实验室 - 官方网站">
+  <meta property="og:description" content="机器人科创实验室：云枢Thrive战队（RoboMaster）参赛记录、项目与历年获奖。">
+  <meta property="og:image" content="https://你的GitHub用户名.github.io/lab-website/assets/img/lab-logo-1.jpg">
+  <title>机器人科创实验室 - 首页</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/favicon.svg">
 </head>
@@ -17,7 +17,10 @@
   <!-- ===== 顶部导航栏 ===== -->
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="brand">🔬 【实验室名称】</a>
+      <a href="index.html" class="brand">
+        <img src="assets/img/lab-logo-1.jpg" alt="实验室 logo" class="brand-logo">
+        机器人科创实验室
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
         <span></span><span></span><span></span>
       </button>
@@ -25,7 +28,7 @@
         <a href="index.html" class="active">首页</a>
         <a href="index.html#about">实验室简介</a>
         <a href="projects.html">项目展示</a>
-        <a href="publications.html">论文成果</a>
+        <a href="awards.html">获奖荣誉</a>
         <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub ↗</a>
       </nav>
     </div>
@@ -34,12 +37,13 @@
   <!-- ===== 首屏 Hero ===== -->
   <section class="hero">
     <div class="container">
-      <p class="hero-eyebrow">欢迎来到</p>
-      <h1 class="hero-title">【实验室名称】</h1>
-      <p class="hero-sub">【一句话介绍实验室，例如：聚焦人工智能与大数据方向的科研团队】</p>
+      <img src="assets/img/lab-logo-1.jpg" alt="机器人科创实验室 logo" class="hero-logo">
+      <p class="hero-eyebrow">机器人科创实验室 · 云枢Thrive战队</p>
+      <h1 class="hero-title">机器人科创实验室</h1>
+      <p class="hero-sub">【一句话介绍实验室，例如：一支活跃在全国大学生机器人大赛 RoboMaster 赛场上的科创团队，专注机械、电控与算法的工程实践。】</p>
       <div class="hero-actions">
-        <a href="projects.html" class="btn btn-primary">查看项目</a>
-        <a href="publications.html" class="btn btn-ghost">论文成果</a>
+        <a href="awards.html" class="btn btn-primary">🏆 历年获奖</a>
+        <a href="projects.html" class="btn btn-ghost">查看项目</a>
       </div>
     </div>
   </section>
@@ -51,65 +55,74 @@
       <div class="about-grid">
         <div class="about-text">
           <!-- 👇 在这里填写实验室的详细介绍，可以写成立即多段 -->
-          <p>【实验室详细介绍第一段：成立时间、隶属单位、总体定位等。例如：本实验室成立于20XX年，隶属于XX大学XX学院，长期从事XX方向的基础与应用研究。】</p>
-          <p>【实验室详细介绍第二段：主要研究方向、代表性工作、合作单位等。】</p>
-          <p>【实验室详细介绍第三段：人才培养情况、毕业生去向、获得的荣誉等。】</p>
+          <p>【实验室详细介绍第一段：成立时间、隶属单位、总体定位等。例如：机器人科创实验室成立于20XX年，隶属于XX学校，以全国大学生机器人大赛 RoboMaster 为主要平台开展工程实践与科创活动。】</p>
+          <p>【实验室详细介绍第二段：战队组成（机械组/电控组/视觉算法组/运营组）、日常训练、代表队员等。】</p>
+          <p>【实验室详细介绍第三段：历年成绩、培养成果、未来规划等。】</p>
         </div>
         <div class="about-facts">
           <div class="fact-card">
-            <h3>🎯 研究方向</h3>
+            <h3>🎯 研究方向 / 组别</h3>
             <ul>
-              <li>【研究方向一，如：机器学习】</li>
-              <li>【研究方向二，如：计算机视觉】</li>
-              <li>【研究方向三，如：自然语言处理】</li>
+              <li>【组别一，如：机械结构设计】</li>
+              <li>【组别二，如：嵌入式电控】</li>
+              <li>【组别三，如：视觉算法 / 自瞄】</li>
+              <li>【组别四，如：运营宣传 / 项目管理】</li>
             </ul>
           </div>
           <div class="fact-card">
-            <h3>👥 团队规模</h3>
-            <p>【教授 X 人 / 博士生 X 人 / 硕士生 X 人】</p>
+            <h3>🤖 参赛战队</h3>
+            <p><strong>云枢Thrive战队</strong> —— 全国大学生机器人大赛 RoboMaster 参赛队伍</p>
           </div>
           <div class="fact-card">
             <h3>📬 联系我们</h3>
             <p>邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
-            <p>地址：【学校 / 学院 / 办公室地址】</p>
+            <p>地址：【学校 / 学院 / 实验室地址】</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== 团队成员 ===== -->
+  <!-- ===== 战队板块 ===== -->
   <section id="team" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">团队成员</h2>
+      <h2 class="section-title">云枢Thrive战队</h2>
+      <div class="team-logos">
+        <img src="assets/img/team-logo-1.jpg" alt="云枢Thrive战队 logo" class="team-logo">
+        <img src="assets/img/team-logo-2.jpg" alt="云枢Thrive战队 logo" class="team-logo">
+      </div>
+      <p class="team-desc">【战队一句话介绍，例如：云枢Thrive战队成立于20XX年，每年征战 RoboMaster 机甲大师赛，在步兵、哨兵、工程、英雄、飞镖等兵种上持续投入研发。】</p>
+      <a href="awards.html" class="btn btn-primary">查看历年获奖 →</a>
+
+      <h3 class="team-subtitle">团队成员</h3>
       <div class="team-grid">
         <!-- 👇 复制卡片添加更多成员，头像处可换成真实照片 -->
         <div class="member-card">
           <div class="avatar">【照】</div>
           <h3>【成员姓名】</h3>
-          <p class="member-role">【职称 / 角色，如：教授 / 博士生导师】</p>
-          <p class="member-dir">研究方向：【如：机器学习】</p>
+          <p class="member-role">【角色：队长 / 机械组长 / 电控组长 / 算法组长…】</p>
+          <p class="member-dir">负责：【如：步兵机器人】</p>
           <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
         </div>
         <div class="member-card">
           <div class="avatar">【照】</div>
           <h3>【成员姓名】</h3>
-          <p class="member-role">【职称 / 角色】</p>
-          <p class="member-dir">研究方向：【如：计算机视觉】</p>
+          <p class="member-role">【角色】</p>
+          <p class="member-dir">负责：【如：哨兵机器人】</p>
           <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
         </div>
         <div class="member-card">
           <div class="avatar">【照】</div>
           <h3>【成员姓名】</h3>
-          <p class="member-role">【职称 / 角色】</p>
-          <p class="member-dir">研究方向：【如：自然语言处理】</p>
+          <p class="member-role">【角色】</p>
+          <p class="member-dir">负责：【如：自瞄视觉算法】</p>
           <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
         </div>
         <div class="member-card">
           <div class="avatar">【照】</div>
           <h3>【成员姓名】</h3>
-          <p class="member-role">【职称 / 角色】</p>
-          <p class="member-dir">研究方向：【如：数据挖掘】</p>
+          <p class="member-role">【角色】</p>
+          <p class="member-dir">负责：【如：运营宣传】</p>
           <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
         </div>
       </div>
@@ -121,22 +134,22 @@
     <div class="container">
       <h2 class="section-title">快速浏览</h2>
       <div class="quick-grid">
+        <a href="awards.html" class="quick-card">
+          <div class="quick-icon">🏆</div>
+          <h3>获奖荣誉</h3>
+          <p>历年 RoboMaster 等赛事的获奖记录与代表成果。</p>
+          <span class="quick-more">前往查看 →</span>
+        </a>
         <a href="projects.html" class="quick-card">
           <div class="quick-icon">💻</div>
           <h3>代码 / 项目</h3>
-          <p>实验室开源的代码仓库、项目 Demo 与工具集。</p>
-          <span class="quick-more">前往查看 →</span>
-        </a>
-        <a href="publications.html" class="quick-card">
-          <div class="quick-icon">📄</div>
-          <h3>论文 / 成果</h3>
-          <p>近年的期刊论文、会议论文与专利申请列表。</p>
+          <p>战队机器人研发中的代码仓库、项目 Demo 与工具集。</p>
           <span class="quick-more">前往查看 →</span>
         </a>
         <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener" class="quick-card">
           <div class="quick-icon">🐙</div>
           <h3>GitHub 主页</h3>
-          <p>实验室的 GitHub 组织 / 账号，查看全部开源仓库。</p>
+          <p>实验室 / 战队的 GitHub 组织或账号，查看全部开源仓库。</p>
           <span class="quick-more">前往查看 →</span>
         </a>
       </div>
@@ -146,7 +159,7 @@
   <!-- ===== 页脚 ===== -->
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> 【实验室名称】 | 邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
+      <p>© <span id="year"></span> 机器人科创实验室 · 云枢Thrive战队 | 邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
       <p class="footer-sub">由 GitHub Pages 免费托管 · 电脑 / 手机均可访问</p>
     </div>
   </footer>
