@@ -22,7 +22,7 @@
 1. 首页 `index.html`：补充实验室 / 战队详细介绍、更多成员（复制卡片即可）、联系邮箱
 2. `projects.html` 的卡片 → 你的项目（复制卡片改内容即可加更多）
 3. `awards.html` → 补全历年获奖情况（按年份分组，复制条目加更多）；参赛足迹已按 2026 赛季实际名单填好
-4. 所有 `你的GitHub用户名` → 真实 GitHub 用户名（邮箱已设为 1537940649@qq.com，地址已设为 06B101 & 06B110）
+4. GitHub 用户名已设为 L-droid-dev（如更换账号，全局搜索 `L-droid-dev` 替换即可）
 5. 想换 logo：直接替换 `assets/img/` 里的同名图片即可（保持文件名不变）
 6. 不需要「合作伙伴」板块：删除 `index.html` 中 `id="team"` 之后、页脚之前的整段 `<!-- ===== 合作伙伴 ===== -->` 区块
 
@@ -37,7 +37,7 @@
 > 2. 回到本目录执行下面两行：
 
 ```bash
-git remote add origin https://github.com/你的GitHub用户名/lab-website.git
+git remote add origin https://github.com/L-droid-dev/lab-website.git
 git push -u origin main
 ```
 
@@ -51,7 +51,7 @@ git push -u origin main
 1. 进入仓库 → **Settings** → 左侧 **Pages**
 2. **Source** 选 `Deploy from a branch`，分支选 `main`，目录选 `/ (root)`
 3. 点 **Save**，等 1~2 分钟
-4. 访问 `https://你的GitHub用户名.github.io/lab-website/`，就是你的网站了 🎉
+4. 访问 `https://L-droid-dev.github.io/lab-website/`，就是你的网站了 🎉
 
 ### 以后更新内容
 
