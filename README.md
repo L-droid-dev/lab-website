@@ -30,13 +30,11 @@
 
 ### 方式 A：用 Git 命令行（推荐，以后更新方便）
 
+> ✅ 本目录**已经初始化好 Git 仓库并提交了第一个版本**，你只需要：
+> 1. 在 GitHub 网页上新建一个仓库（名字建议 `lab-website`，设为 **Public**，**不要**勾选自动生成 README 选项）
+> 2. 回到本目录执行下面两行：
+
 ```bash
-# 1. 在 GitHub 网页上新建仓库，名字建议叫 lab-website（设为 Public）
-# 2. 在本目录执行：
-git init
-git add .
-git commit -m "init lab website"
-git branch -M main
 git remote add origin https://github.com/你的GitHub用户名/lab-website.git
 git push -u origin main
 ```
