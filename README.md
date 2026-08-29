@@ -22,7 +22,7 @@
 1. 首页 `index.html`：补充实验室 / 战队详细介绍、更多成员（复制卡片即可）、联系邮箱
 2. `projects.html` 的卡片 → 你的项目（复制卡片改内容即可加更多）
 3. `awards.html` → 补全历年获奖情况（按年份分组，复制条目加更多）；参赛足迹已按 2026 赛季实际名单填好
-4. GitHub 用户名已设为 L-droid-dev（如更换账号，全局搜索 `L-droid-dev` 替换即可）
+4. 网站仓库在个人账号 L-droid-dev，代码仓库已迁移到组织 zua-robot-lab（如更换账号，全局搜索 `L-droid-dev` 替换即可）
 5. 想换 logo：直接替换 `assets/img/` 里的同名图片即可（保持文件名不变）
 6. 不需要「合作伙伴」板块：删除 `index.html` 中 `id="team"` 之后、页脚之前的整段 `<!-- ===== 合作伙伴 ===== -->` 区块
 7. 获奖证书照片放 `assets/img/certificates/`，实验室风采照片放 `assets/img/gallery/`，然后在对应页面的图墙里引用
@@ -76,10 +76,10 @@ git push
 
 | 方向 | 仓库名 | 网页地址 |
 | --- | --- | --- |
-| 控制 | `control` | github.com/L-droid-dev/control |
-| 视觉 | `vision` | github.com/L-droid-dev/vision |
-| 硬件 | `hardware` | github.com/L-droid-dev/hardware |
-| 机械 | `mechanical` | github.com/L-droid-dev/mechanical |
+| 控制 | `control` | github.com/zua-robot-lab/control |
+| 视觉 | `vision` | github.com/zua-robot-lab/vision |
+| 硬件 | `hardware` | github.com/zua-robot-lab/hardware |
+| 机械 | `mechanical` | github.com/zua-robot-lab/mechanical |
 
 （四宫格卡片已指向这些地址，仓库建好即生效。）
 
@@ -89,7 +89,7 @@ git push
 
 **添加 Collaborators（人少时推荐）：**
 
-1. 打开私有仓库，例如 `https://github.com/L-droid-dev/control`
+1. 打开私有仓库，例如 `https://github.com/zua-robot-lab/control`
 2. 点 **Settings** → 左侧 **Collaborators**
 3. 点 **Add people**，输入成员的 GitHub 用户名
 4. 选权限级别，点 **Add 用户名 to this repository**：
@@ -108,7 +108,7 @@ git push
 
 ```bash
 # 首次：克隆私有仓库（需已登录 GitHub 客户端或被邀请）
-git clone https://github.com/L-droid-dev/control.git
+git clone https://github.com/zua-robot-lab/control.git
 
 # 日常更新
 cd control
@@ -126,7 +126,7 @@ git push
 
 ### 5. 网站四宫格链接在哪改
 
-`projects.html` 里的四张卡片 `<a href="https://github.com/L-droid-dev/xxx">`，改仓库名或换成组织地址即可。
+`projects.html` 里的四张卡片 `<a href="https://github.com/zua-robot-lab/xxx">`，改仓库名或换成组织地址即可。
 
 ## 五、进阶（可选）
 
