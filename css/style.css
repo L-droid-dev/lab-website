@@ -881,12 +881,25 @@ img { max-width: 100%; display: block; }
 
 .dir-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 
-.dir-img {
-  width: 110px;
-  height: 110px;
-  object-fit: contain;
+.dir-img-frame {
+  width: 150px;
+  height: 150px;
   margin: 0 auto 16px;
-  display: block;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dir-img {
+  max-width: 86%;
+  max-height: 86%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .dir-card h3 { font-size: 18px; margin-bottom: 10px; }
