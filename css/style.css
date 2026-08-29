@@ -724,16 +724,16 @@ img { max-width: 100%; display: block; }
   height: 56px;
   margin: 0 auto 14px;
   border-radius: 50%;
-  background: #fff;
-  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 6px;
+  padding: 11px;
 }
 
-.media-douyin, .media-bilibili, .media-xhs { background: #fff; }
+.media-douyin { background: #161823; }
+.media-bilibili { background: #fb7299; }
+.media-xhs { background: #ff2442; }
 
 .media-icon img { width: 100%; height: 100%; object-fit: contain; }
 
@@ -765,17 +765,18 @@ img { max-width: 100%; display: block; }
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: #fff;
-  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 5px;
+  padding: 8px;
   transition: transform 0.2s;
 }
 
 .social-icons a:hover { transform: translateY(-2px); }
+.social-icons .s-douyin { background: #161823; }
+.social-icons .s-bilibili { background: #fb7299; }
+.social-icons .s-xhs { background: #ff2442; }
 .social-icons img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ---------- 页脚（整合版） ---------- */
@@ -840,8 +841,7 @@ img { max-width: 100%; display: block; }
 
 /* 页脚社交图标（深色背景版） */
 .footer .social-icons { justify-content: flex-start; margin-top: 14px; }
-.footer .social-icons a { background: #334155; border-color: #475569; }
-.footer .social-icons a:hover { background: var(--accent); }
+.footer .social-icons a:hover { transform: translateY(-2px); filter: brightness(1.15); }
 
 /* ---------- 数字统计条 ---------- */
 .stats-band {
@@ -887,10 +887,23 @@ img { max-width: 100%; display: block; }
 /* ---------- 招新专区 ---------- */
 .recruit-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
-  max-width: 980px;
+  max-width: 760px;
   margin: 0 auto;
+}
+
+.recruit-card.qr-card { text-align: center; }
+
+.recruit-qr {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  margin: 0 auto 10px;
+  display: block;
 }
 
 .recruit-card {
