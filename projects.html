@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="【实验室名称】代码与项目展示">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="项目展示 - 【实验室名称】">
+  <meta property="og:description" content="【实验室名称】的开源项目、代码仓库与工具。">
+  <meta property="og:image" content="https://你的GitHub用户名.github.io/lab-website/assets/favicon.svg">
+  <title>项目展示 - 【实验室名称】</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+
+  <!-- ===== 顶部导航栏（与首页保持一致） ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">🔬 【实验室名称】</a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="index.html#about">实验室简介</a>
+        <a href="projects.html" class="active">项目展示</a>
+        <a href="publications.html">论文成果</a>
+        <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 页面标题 ===== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>💻 代码 / 项目展示</h1>
+      <p>实验室的开源项目与工具，欢迎 Star、Fork 与交流。</p>
+    </div>
+  </section>
+
+  <!-- ===== 项目列表 ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="projects-grid">
+
+        <!-- 👇 复制下面这段卡片，改成你自己的项目即可 -->
+        <article class="project-card">
+          <div class="project-top">
+            <h3>【项目一名称】</h3>
+            <span class="badge">开源</span>
+          </div>
+          <p class="project-desc">【项目一句话简介：它是做什么的、解决什么问题、技术栈是什么。】</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">深度学习</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/你的GitHub用户名/仓库名" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+            <a href="#" target="_blank" rel="noopener">在线 Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>【项目二名称】</h3>
+            <span class="badge badge-green">工具</span>
+          </div>
+          <p class="project-desc">【项目一句话简介：它是做什么的、解决什么问题、技术栈是什么。】</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/你的GitHub用户名/仓库名" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>【项目三名称】</h3>
+            <span class="badge badge-blue">数据集</span>
+          </div>
+          <p class="project-desc">【项目一句话简介：它是做什么的、解决什么问题、技术栈是什么。】</p>
+          <div class="tags">
+            <span class="tag">数据标注</span>
+            <span class="tag">Benchmark</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/你的GitHub用户名/仓库名" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+            <a href="#" target="_blank" rel="noopener">论文对应页 ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>【项目四名称】</h3>
+            <span class="badge">实验代码</span>
+          </div>
+          <p class="project-desc">【项目一句话简介：它是做什么的、解决什么问题、技术栈是什么。】</p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">CUDA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/你的GitHub用户名/仓库名" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> 【实验室名称】 | 邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
+      <p class="footer-sub">由 GitHub Pages 免费托管 · 电脑 / 手机均可访问</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

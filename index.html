@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="【实验室名称】官方网站 - 实验室简介、研究方向、代码项目与论文成果">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="【实验室名称】 - 官方网站">
+  <meta property="og:description" content="【实验室名称】：实验室简介、研究方向、代码项目与论文成果。">
+  <meta property="og:image" content="https://你的GitHub用户名.github.io/lab-website/assets/favicon.svg">
+  <title>【实验室名称】 - 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.svg">
+</head>
+<body>
+
+  <!-- ===== 顶部导航栏 ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">🔬 【实验室名称】</a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">首页</a>
+        <a href="index.html#about">实验室简介</a>
+        <a href="projects.html">项目展示</a>
+        <a href="publications.html">论文成果</a>
+        <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 首屏 Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">欢迎来到</p>
+      <h1 class="hero-title">【实验室名称】</h1>
+      <p class="hero-sub">【一句话介绍实验室，例如：聚焦人工智能与大数据方向的科研团队】</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">查看项目</a>
+        <a href="publications.html" class="btn btn-ghost">论文成果</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 实验室简介 ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">实验室简介</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <!-- 👇 在这里填写实验室的详细介绍，可以写成立即多段 -->
+          <p>【实验室详细介绍第一段：成立时间、隶属单位、总体定位等。例如：本实验室成立于20XX年，隶属于XX大学XX学院，长期从事XX方向的基础与应用研究。】</p>
+          <p>【实验室详细介绍第二段：主要研究方向、代表性工作、合作单位等。】</p>
+          <p>【实验室详细介绍第三段：人才培养情况、毕业生去向、获得的荣誉等。】</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact-card">
+            <h3>🎯 研究方向</h3>
+            <ul>
+              <li>【研究方向一，如：机器学习】</li>
+              <li>【研究方向二，如：计算机视觉】</li>
+              <li>【研究方向三，如：自然语言处理】</li>
+            </ul>
+          </div>
+          <div class="fact-card">
+            <h3>👥 团队规模</h3>
+            <p>【教授 X 人 / 博士生 X 人 / 硕士生 X 人】</p>
+          </div>
+          <div class="fact-card">
+            <h3>📬 联系我们</h3>
+            <p>邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
+            <p>地址：【学校 / 学院 / 办公室地址】</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 团队成员 ===== -->
+  <section id="team" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">团队成员</h2>
+      <div class="team-grid">
+        <!-- 👇 复制卡片添加更多成员，头像处可换成真实照片 -->
+        <div class="member-card">
+          <div class="avatar">【照】</div>
+          <h3>【成员姓名】</h3>
+          <p class="member-role">【职称 / 角色，如：教授 / 博士生导师】</p>
+          <p class="member-dir">研究方向：【如：机器学习】</p>
+          <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
+        </div>
+        <div class="member-card">
+          <div class="avatar">【照】</div>
+          <h3>【成员姓名】</h3>
+          <p class="member-role">【职称 / 角色】</p>
+          <p class="member-dir">研究方向：【如：计算机视觉】</p>
+          <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
+        </div>
+        <div class="member-card">
+          <div class="avatar">【照】</div>
+          <h3>【成员姓名】</h3>
+          <p class="member-role">【职称 / 角色】</p>
+          <p class="member-dir">研究方向：【如：自然语言处理】</p>
+          <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
+        </div>
+        <div class="member-card">
+          <div class="avatar">【照】</div>
+          <h3>【成员姓名】</h3>
+          <p class="member-role">【职称 / 角色】</p>
+          <p class="member-dir">研究方向：【如：数据挖掘】</p>
+          <p class="member-mail"><a href="mailto:成员邮箱@example.com">成员邮箱@example.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 快速导航 ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">快速浏览</h2>
+      <div class="quick-grid">
+        <a href="projects.html" class="quick-card">
+          <div class="quick-icon">💻</div>
+          <h3>代码 / 项目</h3>
+          <p>实验室开源的代码仓库、项目 Demo 与工具集。</p>
+          <span class="quick-more">前往查看 →</span>
+        </a>
+        <a href="publications.html" class="quick-card">
+          <div class="quick-icon">📄</div>
+          <h3>论文 / 成果</h3>
+          <p>近年的期刊论文、会议论文与专利申请列表。</p>
+          <span class="quick-more">前往查看 →</span>
+        </a>
+        <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener" class="quick-card">
+          <div class="quick-icon">🐙</div>
+          <h3>GitHub 主页</h3>
+          <p>实验室的 GitHub 组织 / 账号，查看全部开源仓库。</p>
+          <span class="quick-more">前往查看 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> 【实验室名称】 | 邮箱：<a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
+      <p class="footer-sub">由 GitHub Pages 免费托管 · 电脑 / 手机均可访问</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
