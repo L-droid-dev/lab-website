@@ -65,13 +65,61 @@ git push
 
 等 1 分钟刷新网页即可看到新内容。
 
-## 四、进阶（可选）
+## 四、内部代码协作指南（实验室成员）
+
+> 网站是公开的，但**代码仓库是私有的**：只有受邀成员登录 GitHub 后才能查看、上传、修改代码；非成员点击四宫格会看到 404（保密效果，属正常现象）。
+
+### 1. 创建四个方向的私有仓库（一次性，由管理员做）
+
+在 GitHub 网页上依次新建 4 个仓库（New repository → 名称填下面的 → 选 **Private** → 勾选 Add a README）：
+
+| 方向 | 仓库名 | 网页地址 |
+| --- | --- | --- |
+| 控制 | `control` | github.com/L-droid-dev/control |
+| 视觉 | `vision` | github.com/L-droid-dev/vision |
+| 硬件 | `hardware` | github.com/L-droid-dev/hardware |
+| 机械 | `mechanical` | github.com/L-droid-dev/mechanical |
+
+（四宫格卡片已指向这些地址，仓库建好即生效。）
+
+### 2. 给成员开权限
+
+每个成员的电脑上都要有 GitHub 账号（注册：github.com/signup），然后把用户名发给管理员：
+
+- **人少（<10 人）**：管理员在仓库 Settings → Collaborators → Add people，输入成员用户名即可；
+- **人多 / 长期维护**：建议创建 GitHub Organization（组织），把仓库放进组织，成员加入组织并按组分配权限（控制组/视觉组/硬件组/机械组），后续换人、离职管理更规范。
+
+### 3. 成员上传 / 更新代码（以 control 为例）
+
+```bash
+# 首次：克隆私有仓库（需已登录 GitHub 客户端或被邀请）
+git clone https://github.com/L-droid-dev/control.git
+
+# 日常更新
+cd control
+# ... 修改/添加文件 ...
+git add .
+git commit -m "更新说明"
+git push
+```
+
+> 第一次 push 会弹出 GitHub 登录窗口，用被邀请的账号登录即可。以后每台机器只需登录一次。
+
+### 4. 项目细分说明放哪
+
+每个仓库内的 **README.md** 写这个方向的细分说明（模块列表、使用方法、依赖环境），点进仓库第一眼就能看到——细分内容全部在仓库里管理，网站只做入口。
+
+### 5. 网站四宫格链接在哪改
+
+`projects.html` 里的四张卡片 `<a href="https://github.com/L-droid-dev/xxx">`，改仓库名或换成组织地址即可。
+
+## 五、进阶（可选）
 
 - **自定义域名**：Settings → Pages → Custom domain，绑定你买的域名
 - **GitHub 组织**：如果实验室有自己的 GitHub 组织账号，把仓库放到组织下，网址变成 `组织名.github.io/仓库名`
 - **SSL**：Pages 默认免费开启 HTTPS
 
-## 五、常见问题
+## 六、常见问题
 
 **Q1：部署后页面样式/图片全乱了？**
 > 检查地址栏网址是否以 `/lab-website/` 结尾（如果仓库名不是 `lab-website`，就是你的仓库名）。本网站全部使用相对路径，只要文件结构和仓库一致就不会出错；不要用 `file://` 打开部署后的链接。
