@@ -725,6 +725,8 @@ img { max-width: 100%; display: block; }
 .media-bilibili { background: #fb7299; }
 .media-xhs { background: #ff2442; }
 
+.media-icon svg { width: 55%; height: 55%; }
+
 .media-card h3 { font-size: 17px; margin-bottom: 6px; color: var(--text); }
 .media-card p { color: var(--text-light); font-size: 13.5px; margin-bottom: 14px; }
 
@@ -766,6 +768,7 @@ img { max-width: 100%; display: block; }
 .social-icons .s-douyin { background: #161823; }
 .social-icons .s-bilibili { background: #fb7299; }
 .social-icons .s-xhs { background: #ff2442; }
+.social-icons svg { width: 55%; height: 55%; }
 
 /* ---------- 页脚 ---------- */
 .footer {
