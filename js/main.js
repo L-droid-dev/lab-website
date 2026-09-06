@@ -94,9 +94,9 @@ if (lightbox) {
   }
   const dots = dotsWrap.children;
 
-  // 一步宽度 = 可视区宽度 ÷ 张数（轨道总宽是可视区的 N 倍，% 位移会失真，必须用像素）
+  // 一步 = 单张幻灯片的实际像素宽度（getBoundingClientRect 最可靠）
   function stepWidth() {
-    return track.clientWidth / slides;
+    return track.children[0].getBoundingClientRect().width;
   }
 
   function go(i) {
