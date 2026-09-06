@@ -72,6 +72,62 @@ if (lightbox) {
   });
 }
 
+// ---------- 首页轮播图 ----------
+(function initCarousel() {
+  const track = document.getElementById('carouselTrack');
+  const carousel = document.getElementById('carousel');
+  if (!track || !carousel) return;
+
+  const slides = track.children.length;
+  if (slides < 2) return;
+
+  const dotsWrap = document.getElementById('carouselDots');
+  let index = 0;
+  let timer = null;
+
+  // 生成圆点
+  for (let i = 0; i < slides; i++) {
+    const dot = document.createElement('button');
+    dot.setAttribute('aria-label', '切换到第 ' + (i + 1) + ' 张');
+    dot.addEventListener('click', () => { go(i); restart(); });
+    dotsWrap.appendChild(dot);
+  }
+  const dots = dotsWrap.children;
+
+  function go(i) {
+    index = (i + slides) % slides;
+    track.style.transform = 'translateX(-' + index * 100 + '%)';
+    for (let j = 0; j < dots.length; j++) {
+      dots[j].classList.toggle('active', j === index);
+    }
+  }
+
+  function restart() {
+    if (timer) clearInterval(timer);
+    timer = setInterval(() => go(index + 1), 5000);
+  }
+
+  // 左右按钮
+  const prevBtn = carousel.querySelector('.carousel-btn.prev');
+  const nextBtn = carousel.querySelector('.carousel-btn.next');
+  if (prevBtn) prevBtn.addEventListener('click', () => { go(index - 1); restart(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { go(index + 1); restart(); });
+
+  // 悬停暂停
+  carousel.addEventListener('mouseenter', () => { if (timer) clearInterval(timer); });
+  carousel.addEventListener('mouseleave', restart);
+
+  // 键盘左右键切换
+  carousel.setAttribute('tabindex', '0');
+  carousel.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { go(index - 1); restart(); }
+    if (e.key === 'ArrowRight') { go(index + 1); restart(); }
+  });
+
+  go(0);
+  restart();
+})();
+
 // ---------- 招新咨询表单（调用邮箱客户端发送） ----------
 function composeMail(event) {
   const nameInput = document.getElementById('rf-name');
