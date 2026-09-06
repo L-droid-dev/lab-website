@@ -109,7 +109,7 @@ if (lightbox) {
 
   function restart() {
     if (timer) clearInterval(timer);
-    timer = setInterval(() => go(index + 1), 5000);
+    timer = setInterval(() => go(index + 1), 3000);
   }
 
   // 左右按钮
