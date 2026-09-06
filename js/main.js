@@ -94,9 +94,14 @@ if (lightbox) {
   }
   const dots = dotsWrap.children;
 
+  // 一步宽度 = 可视区宽度 ÷ 张数（轨道总宽是可视区的 N 倍，% 位移会失真，必须用像素）
+  function stepWidth() {
+    return track.clientWidth / slides;
+  }
+
   function go(i) {
     index = (i + slides) % slides;
-    track.style.transform = 'translateX(-' + index * 100 + '%)';
+    track.style.transform = 'translateX(' + (-index * stepWidth()) + 'px)';
     for (let j = 0; j < dots.length; j++) {
       dots[j].classList.toggle('active', j === index);
     }
@@ -126,6 +131,9 @@ if (lightbox) {
 
   go(0);
   restart();
+
+  // 窗口尺寸变化时保持当前张对齐
+  window.addEventListener('resize', () => go(index));
 })();
 
 // ---------- 招新咨询表单（调用邮箱客户端发送） ----------

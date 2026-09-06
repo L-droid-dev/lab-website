@@ -867,7 +867,15 @@ img { max-width: 100%; display: block; }
 .footer .social-icons a:hover { transform: translateY(-2px); filter: brightness(1.15); }
 
 /* ---------- 轮播图 ---------- */
-.carousel { position: relative; overflow: hidden; }
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-hover);
+  border: 1px solid var(--border);
+}
 
 .carousel-viewport { overflow: hidden; }
 
@@ -1137,10 +1145,11 @@ img { max-width: 100%; display: block; }
   .hero-logo { width: 96px; height: 96px; }
   .team-logo { width: 180px; height: 90px; }
   .partner-card { flex-direction: column; text-align: center; padding: 18px 20px; }
-  .carousel-slide { height: 260px; }
+  .carousel-slide { height: 250px; }
   .carousel-btn { width: 38px; height: 38px; font-size: 22px; }
   .carousel-btn.prev { left: 10px; }
   .carousel-btn.next { right: 10px; }
+  .carousel { border-radius: 12px; }
 }
 
 @media (max-width: 480px) {
