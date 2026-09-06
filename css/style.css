@@ -610,22 +610,59 @@ img { max-width: 100%; display: block; }
 
 .award-list { list-style: none; }
 
-.award-item {
-  padding: 18px 20px;
-  margin-bottom: 14px;
+/* 行式获奖条目（网站风） */
+.award-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--card);
-  transition: box-shadow 0.2s;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
 
-.award-item:hover { box-shadow: var(--shadow); }
+.award-row:hover {
+  border-color: var(--accent);
+  background: #152440;
+  transform: translateX(5px);
+}
 
-.award-name { font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
-.award-team { font-size: 14px; color: var(--text-light); margin-bottom: 4px; }
-.award-venue { font-size: 14px; color: var(--accent); margin-bottom: 8px; }
+.award-main { min-width: 0; }
 
-.award-links { display: flex; gap: 18px; font-size: 13.5px; font-weight: 600; }
+.award-name { font-size: 15.5px; font-weight: 600; margin: 0 0 5px; }
+
+.award-meta { font-size: 13.5px; color: var(--text-light); }
+
+.award-lv {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: 1px;
+}
+
+.lv-guo   { background: rgba(77, 163, 224, 0.16); color: #86c6f2; }
+.lv-sheng { background: rgba(74, 222, 128, 0.14); color: #6ee7a0; }
+.lv-tec   { background: rgba(196, 140, 255, 0.16); color: #c9a2ff; }
+
+.award-link {
+  flex-shrink: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 6px 15px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.award-link:hover { background: var(--accent); color: #fff; }
 
 /* ---------- 合作伙伴 ---------- */
 .partners { padding: 60px 0 70px; background: var(--bg-alt); }
@@ -1145,6 +1182,7 @@ img { max-width: 100%; display: block; }
   .hero-logo { width: 96px; height: 96px; }
   .team-logo { width: 180px; height: 90px; }
   .partner-card { flex-direction: column; text-align: center; padding: 18px 20px; }
+  .award-row { flex-direction: column; align-items: flex-start; gap: 10px; }
   .carousel-slide { height: 250px; }
   .carousel-btn { width: 38px; height: 38px; font-size: 22px; }
   .carousel-btn.prev { left: 10px; }
