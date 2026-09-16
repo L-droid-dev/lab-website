@@ -10,3 +10,19 @@ desktop.ini
 
 # 本地日志
 *.log
+
+# ===== 敏感文件（绝对不要提交到公开仓库）=====
+# GitHub 恢复码 / 二次验证备份码
+*recovery-codes*
+*recovery_code*
+# 密钥与凭据
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+secrets*
+credentials*
+*密码*
+*token*
