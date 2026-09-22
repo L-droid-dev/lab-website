@@ -49,8 +49,8 @@ const lightboxImg = document.getElementById('lightboxImg');
 const lightboxCaption = document.getElementById('lightboxCaption');
 
 if (lightbox) {
-  // 瀑布流风采照片点击放大
-  document.querySelectorAll('.gallery-item img').forEach((img) => {
+  // 风采照片 + 获奖证书：点击站内放大预览
+  document.querySelectorAll('.gallery-item img, .cert-item img').forEach((img) => {
     img.addEventListener('click', () => {
       lightboxImg.src = img.src;
       lightboxCaption.textContent = img.alt || '';
